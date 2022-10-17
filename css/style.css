@@ -708,8 +708,12 @@ h1, h2{
     padding: 0 27px;
     max-height: 918px;
 }
+.auctions__slider-wrap{
+    max-height: 918px;
+}
 .auctions__item{
     position: relative;
+    max-height: 385px;
 }
 .auctions__item-image{
     width: 100%;
@@ -731,6 +735,9 @@ h1, h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.auctions__slider-wrap .swiper-wrapper{
+    transition-timing-function: linear
 }
 
 /* Footer */

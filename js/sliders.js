@@ -47,5 +47,14 @@ const carouselBottom = new Swiper('.carousel-bottom', {
 })
 
 const auctionSlider = new Swiper('.auctions__slider-wrap', {
-    direction: 'vertical'
+    loop: true,
+    direction: 'vertical',
+    slidesPerView: 2,
+    spaceBetween: 30,
+    autoplay: {
+        enabled: true,
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    speed: 4000,
 })
