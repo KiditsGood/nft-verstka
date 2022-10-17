@@ -401,6 +401,44 @@ h1, h2{
 
 .carousel{
     margin: 200px auto;
+    background: #222528;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 65px 0;
+}
+.carousel-top, .carousel-bottom{
+    max-width: 100%;
+}
+.carousel-top .swiper-wrapper, .carousel-bottom .swiper-wrapper{
+    transition-timing-function: linear
+}
+.carousel__item{
+    position: relative;
+    max-width: 300px;
+    height: 268px;
+}
+.carousel__item-image{
+    width: 300px;
+    height: 268px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.carousel__item-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 23px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.carousel__item-text--name, .carousel__item-text--value{
+    font-size: 24px;
+    line-height: 35px;
+    color: #F2F2F2;
 }
 
 /* Main Project */
@@ -566,4 +604,160 @@ h1, h2{
 }
 .discord__button{
     background: #7289DA;
+}
+
+/* Main Sub */
+
+.sub{
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
+.sub__field{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+.sub__field-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 752px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.sub__field-cards--item{
+    position: relative;
+    border-radius: 20px;
+}
+.card{
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    position: absolute;
+    background: #2B2F34;
+    border-radius: 15px;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 25px 20px;
+    width: 100%;
+}
+.card__name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card__name-title{
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+}
+.card__name-time, .card__watch{
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(141, 141, 141, 1);
+}
+.card__watch{
+    align-self: flex-end;
+    margin-left: auto;
+}
+.sub__field-auctions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 370px;
+    max-height: 918px;
+    height: 918px;
+    width: 100%;
+}
+.auctions__text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.auctions__text-name{
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+    position: relative;
+    padding-left: 13px;
+}
+.auctions__text-name:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background: #D62D30;
+    left: 0;
+    top: 14px;
+}
+.auctions__text-value{
+    font-size: 18px;
+    line-height: 26px;
+    color: #8D8D8D;
+}
+.auctions__slider{
+    background: #2B2F34;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 0 27px;
+    max-height: 918px;
+}
+.auctions__item{
+    position: relative;
+}
+.auctions__item-image{
+    width: 100%;
+}
+.auctions__item-text{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    width: 100%;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Footer */
+
+.footer{
+    background: #121212;
+    box-sizing: border-box;
+    padding: 29px 0 41px;
+    margin-top: 200px;
+}
+.footer--wrap{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: stretch;
+}
+.footer--wrap .header--wrap{
+    width: 100%;
+}
+.footer__contacts{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #2B2F34;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 13px 20px;
+    align-self: flex-end;
 }
