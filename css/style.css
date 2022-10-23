@@ -47,6 +47,93 @@ h1, h2{
     background: linear-gradient(270deg, #D67412 0%, rgba(227, 60, 65, 0.914245) 47.64%, rgba(241, 59, 106, 0.82) 100%);
 }
 
+/* Main Media */
+
+@media (max-width: 999px) {
+    html{
+        overflow-x: hidden;
+    }
+    h1, h2{
+        font-size: 36px;
+        line-height: 39px;
+    }
+    .button--gradient{
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+@media (max-width: 1720px) {
+    .header--wrap, .footer--wrap, section:not(.slider), .slider--wrap{
+        max-width: calc(100% - 40px);
+    }
+    .collections__tabs{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .collections__grid{
+        gap: 20px;
+    }
+    .collections__grid-item{
+        width: unset;
+    }
+    .project{
+        flex-wrap: wrap;
+    }
+    .project__main, .project__back{
+        width: 100%;
+        left: unset;
+        right: -20px;
+    }
+    .face{
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        background-image: none;
+    }
+    .face__space, .face__reg{
+        margin: 0 auto;
+    }
+    .header__nav{
+        gap: 10px;
+    }
+    .pop__next{
+        right: 20%;
+        bottom: -80px;
+        top: unset;
+    }
+    .pop__prev{
+        left: 20%;
+        bottom: -80px;
+        top: unset;
+    }
+    .popular__slider-item--image{
+        width: 100%;
+    }
+    .project__text{
+        max-width: unset;
+    }
+}
+@media (max-width: 1140px) {
+    .header__search{
+        max-width: 160px;
+    }
+    .footer--wrap{
+        gap: 40px;
+    }
+    .header--wrap{
+        flex-wrap: wrap;
+    }
+    .check__title{
+        font-size: 20px;
+    }
+    .popular__slider-item--check{
+        padding: 20px;
+    }
+    .check__button{
+        padding: 15px 30px;
+    }
+}
+
 /* Header */
 
 .header{
@@ -153,7 +240,6 @@ h1, h2{
     }
     .header--wrap{
         width: 100%;
-        max-width: unset;
         margin: 30px auto;
         box-sizing: border-box;
     }
@@ -989,96 +1075,8 @@ h1, h2{
     }
     .footer--wrap{
         width: 100%;
-        max-width: unset;
     }
     .footer__contacts{
         align-self: center;
-    }
-}
-
-/* Main Media */
-
-@media (max-width: 999px) {
-    html{
-        overflow-x: hidden;
-    }
-    h1, h2{
-        font-size: 36px;
-        line-height: 39px;
-    }
-    .button--gradient{
-        font-size: 16px;
-        line-height: 23px;
-    }
-}
-@media (max-width: 1720px) {
-    .header--wrap, .footer--wrap, section:not(.slider), .slider--wrap{
-        max-width: calc(100% - 40px);
-    }
-    .collections__tabs{
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    .collections__grid{
-        gap: 20px;
-    }
-    .collections__grid-item{
-        width: unset;
-    }
-    .project{
-        flex-wrap: wrap;
-    }
-    .project__main, .project__back{
-        width: 100%;
-        left: unset;
-        right: -20px;
-    }
-    .face{
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 20px;
-        background-image: none;
-    }
-    .face__space, .face__reg{
-        margin: 0 auto;
-    }
-    .header__nav{
-        gap: 10px;
-    }
-    .pop__next{
-        right: 20%;
-        bottom: -80px;
-        top: unset;
-    }
-    .pop__prev{
-        left: 20%;
-        bottom: -80px;
-        top: unset;
-    }
-    .popular__slider-item--image{
-        width: 100%;
-    }
-    .project__text{
-        max-width: unset;
-    }
-}
-@media (max-width: 1140px) {
-    .header__search{
-        max-width: 160px;
-    }
-    .footer--wrap{
-        gap: 40px;
-    }
-    .header--wrap{
-        flex-wrap: wrap;
-    }
-    .check__title{
-        font-size: 20px;
-    }
-    .popular__slider-item--check{
-        padding: 20px;
-    }
-    .check__button{
-        padding: 15px 30px;
     }
 }
