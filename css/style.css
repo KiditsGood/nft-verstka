@@ -154,7 +154,6 @@ h1, h2{
     .header--wrap{
         width: 100%;
         max-width: unset;
-        padding: 0 20px;
         margin: 30px auto;
         box-sizing: border-box;
     }
@@ -538,6 +537,7 @@ h1, h2{
     .carousel{
         margin: 80px auto;
         padding: 28px 0;
+        gap: 20px;
     }
     .carousel__item-image{
         width: 167px;
@@ -1001,9 +1001,6 @@ h1, h2{
 @media (max-width: 999px) {
     html{
         overflow-x: hidden;
-    }
-    .wrapper{
-        padding: 0 20px;
     }
     h1, h2{
         font-size: 36px;
