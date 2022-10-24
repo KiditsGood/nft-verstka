@@ -653,7 +653,6 @@ h1, h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 .project__text{
     display: flex;
@@ -670,8 +669,9 @@ h1, h2{
 }
 .project__back{
     position: absolute;
-    right: -120px;
+    right: 0;
     z-index: -1;
+    width: 100%;
 }
 
 @media (max-width: 999px) {
