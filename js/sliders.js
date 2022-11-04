@@ -8,14 +8,23 @@ const mainSlider = new Swiper('.slider--wrap', {
 if (window.screen.width > 999) {
     const popularSlider = new Swiper('.popular__slider-wrap', {
         spaceBetween: 60,
-        // slidesPerView: 'auto',
         pagination: {
             el: ".popular__slider-pag",
             clickable: true,
         },
         navigation: {
-            prevEl: '.pop__prev',
-            nextEl: '.pop__next'
+            prevEl: '.popular .pop__prev',
+            nextEl: '.popular .pop__next'
+        },
+        loop: true,
+        slidesPerView: 3
+    })
+
+    const likeSlider = new Swiper('.like__slider', {
+        spaceBetween: 60,
+        navigation: {
+            prevEl: '.likely .pop__prev',
+            nextEl: '.likely .pop__next'
         },
         loop: true,
         slidesPerView: 3
