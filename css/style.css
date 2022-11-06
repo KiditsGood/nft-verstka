@@ -1516,6 +1516,7 @@ body.with--ticker{
 .ticker__item:nth-child(2){
     transform: rotate(-25deg);
     left: -25%;
+    top: 0;
 }
 .ticker__item-big{
     font-size: 36px;
@@ -1741,5 +1742,25 @@ body.with--ticker{
     }
     .wrapper.noname{
         padding-top: 130px;
+    }
+    .ticker__item{
+        transform: unset !important;
+    }
+    .event{
+        position: unset;
+        box-sizing: border-box;
+        padding: 0 20px;
+        align-items: center;
+    }
+    .ticker{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .event__timer-item{
+        font-size: 30px;
+        line-height: 30px;
     }
 }
