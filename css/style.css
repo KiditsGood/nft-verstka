@@ -1502,6 +1502,7 @@ h1, h2{
 
 body.with--ticker{
     overflow: hidden;
+    background: url("../img/main_frame.png") no-repeat top/100%;
 }
 .ticker__item{
     background: #040404;
