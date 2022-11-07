@@ -1508,11 +1508,11 @@ h1, h2{
         width: 100%;
         height: 100%;
         z-index: 100;
+        background: url("../img/main_frame.jpg") no-repeat center/cover;
     }
 
     body.with--ticker{
         overflow: hidden;
-        background: url("../img/main_frame.jpg") no-repeat top/100%;
     }
     .ticker__item{
         background: #040404;
@@ -1613,11 +1613,11 @@ h1, h2{
         width: 100vw;
         height: 100vh;
         z-index: 100;
+        background: url("../img/main_frame.jpg") no-repeat center/cover;
     }
 
     body.with--ticker{
         overflow: hidden;
-        background: url("../img/main_frame.jpg") no-repeat top/100%;
     }
     .ticker__item{
         background: #040404;
@@ -1709,6 +1709,46 @@ h1, h2{
         letter-spacing: 0.01em;
         color: white;
         align-self: flex-end;
+    }
+}
+@media (min-width: 1401px) and (max-width: 1500px) {
+    .ticker__item:first-child{
+        transform: rotate(25deg);
+    }
+    .ticker__item:nth-child(2){
+        transform: rotate(-25deg);
+    }
+}
+@media (min-width: 1301px) and (max-width: 1400px) {
+    .ticker__item:first-child{
+        transform: rotate(28deg);
+    }
+    .ticker__item:nth-child(2){
+        transform: rotate(-28deg);
+    }
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+    .ticker__item:first-child{
+        transform: rotate(31deg);
+    }
+    .ticker__item:nth-child(2){
+        transform: rotate(-31deg);
+    }
+}
+@media (min-width: 1101px) and (max-width: 1200px) {
+    .ticker__item:first-child{
+        transform: rotate(34deg);
+    }
+    .ticker__item:nth-child(2){
+        transform: rotate(-34deg);
+    }
+}
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .ticker__item:first-child{
+        transform: rotate(37deg);
+    }
+    .ticker__item:nth-child(2){
+        transform: rotate(-37deg);
     }
 }
 
