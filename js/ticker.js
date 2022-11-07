@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const deadline = new Date(2022, 12, 1);
+    const deadline = new Date(2022, 10, 17, 21);
     let timerId = null;
 
     function declensionNum(num, words) {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const deadline = new Date(2023, 1, 1);
+    const deadline = new Date(2022, 10, 29, 21);
     let timerId = null;
 
     function declensionNum(num, words) {
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const deadline = new Date(2023, 2, 1);
+    const deadline = new Date(2022, 11, 5, 21);
     let timerId = null;
 
     function declensionNum(num, words) {
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const deadline = new Date(2023, 3, 1);
+    const deadline = new Date(2022, 11, 13, 21);
     let timerId = null;
 
     function declensionNum(num, words) {
