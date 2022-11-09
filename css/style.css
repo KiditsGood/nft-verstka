@@ -1620,14 +1620,12 @@ h1, h2{
         overflow: hidden;
     }
     .ticker__item{
-        background: #FFD459;
         width: 250vw;
         position: absolute;
         white-space: nowrap;
         overflow: hidden;
-        border-top: 0.9375vw dashed black;
-        border-bottom: 0.9375vw dashed black;
-        border-
+        background: url("../img/ticker-top.png") no-repeat top left/833vw, url("../img/ticker-top.png") no-repeat bottom left/833vw, url("../img/blick.png") no-repeat center left/833vw;
+        background-color: #FFD459;
     }
     .ticker__item:first-child{
         transform: rotate(25deg);
@@ -1646,7 +1644,7 @@ h1, h2{
         color: black;
     }
     .ticker__item-big{
-        padding: 0.7vw 0.365vw 0.35vw;
+        padding: 1.5vw 0.365vw 0.95vw;
     }
     .ticker__item-small{
         font-size: 1.042vw;
@@ -1665,6 +1663,7 @@ h1, h2{
     .event{
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 1.042vw;
         position: absolute;
     }
@@ -1673,7 +1672,7 @@ h1, h2{
         left: 43vw;
     }
     .event__name{
-        font-size: 1.042vw;
+        font-size: 2.083vw;
         font-weight: 700;
         line-height: 1.5625vw;
         letter-spacing: 0.01em;
