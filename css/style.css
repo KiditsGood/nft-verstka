@@ -1620,11 +1620,14 @@ h1, h2{
         overflow: hidden;
     }
     .ticker__item{
-        background: #040404;
+        background: #FFD459;
         width: 250vw;
         position: absolute;
         white-space: nowrap;
         overflow: hidden;
+        border-top: 0.9375vw dashed black;
+        border-bottom: 0.9375vw dashed black;
+        border-
     }
     .ticker__item:first-child{
         transform: rotate(25deg);
@@ -1637,24 +1640,27 @@ h1, h2{
         top: 0;
     }
     .ticker__item-big{
-        font-size: 1.875vw;
+        font-size: 2.03125vw;
         font-weight: 700;
         line-height: 2.71vw;
-        color: white;
+        color: black;
     }
-    .ticker__item-big, .ticker__item-small{
-        padding: 0 0.365vw;
+    .ticker__item-big{
+        padding: 0.7vw 0.365vw 0.35vw;
     }
     .ticker__item-small{
         font-size: 1.042vw;
         line-height: 1.458vw;
         color: white;
     }
+    .ticker__item:first-child{
+        z-index: 2;
+    }
     .ticker__item:first-child p{
-        animation: ticker 30s linear infinite;
+        animation: ticker 65s linear infinite;
     }
     .ticker__item:nth-child(2) p{
-        animation: ticker 30s linear infinite;
+        animation: ticker 65s linear infinite;
     }
     .event{
         display: flex;
@@ -1709,6 +1715,11 @@ h1, h2{
         letter-spacing: 0.01em;
         color: white;
         align-self: flex-end;
+    }
+    .ticker__item-big img{
+        width: 2.65625vw;
+        vertical-align: middle;
+        padding-bottom: 10px;
     }
 }
 @media (min-width: 1401px) and (max-width: 1500px) {
