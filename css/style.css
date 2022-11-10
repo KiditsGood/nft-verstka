@@ -1505,105 +1505,138 @@ h1, h2{
     .ticker{
         position: fixed;
         top: 0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         z-index: 100;
-        background: url("../img/main_frame.jpg") no-repeat center/cover;
     }
 
     body.with--ticker{
-        overflow: hidden;
+        overflow-x: hidden;
+        height: 439.792vw;
+        background: url("../img/t1.jpg") no-repeat top/cover;
+        animation: tback 2s linear infinite;
+    }
+    @keyframes tback {
+        0%{
+            background: url("../img/t1.jpg") no-repeat top/cover;
+        }
+        50% {
+            background: url("../img/t2.jpg") no-repeat top/cover;
+        }
+        to {
+            background: url("../img/t1.jpg") no-repeat top/cover;
+        }
     }
     .ticker__item{
-        background: #040404;
-        width: 250%;
+        width: 250vw;
         position: absolute;
         white-space: nowrap;
         overflow: hidden;
+        background: url("../img/mobile_tick.png") no-repeat top left/100%, url("../img/mobile_tick.png") no-repeat bottom left/100%, url("../img/blick.png") no-repeat center left/833vw;
+        background-color: #FFD459;
     }
     .ticker__item:first-child{
         transform: rotate(25deg);
         bottom: 0;
-        left: -25%;
+        left: -25vw;
     }
     .ticker__item:nth-child(2){
         transform: rotate(-25deg);
-        left: -25%;
+        left: -25vw;
         top: 0;
     }
     .ticker__item-big{
-        font-size: 36px;
+        font-size: 25px;
         font-weight: 700;
-        line-height: 52px;
-        color: white;
+        line-height: 25px;
+        color: black;
     }
-    .ticker__item-big, .ticker__item-small{
-        padding: 0 7px;
+    .ticker__item-big{
+        padding: 20px 10px 15px;
     }
     .ticker__item-small{
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 1.042vw;
+        line-height: 1.458vw;
         color: white;
     }
+    .ticker__item:first-child{
+        z-index: 2;
+    }
     .ticker__item:first-child p{
-        animation: ticker 30s linear infinite;
+        animation: ticker 65s linear infinite;
     }
     .ticker__item:nth-child(2) p{
-        animation: ticker 30s linear infinite;
+        animation: ticker 65s linear infinite;
     }
     .event{
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
+        gap: 1.2vw;
         position: absolute;
     }
+    .event__back{
+        width: 25vw;
+        height: 25vw;
+        z-index: -1;
+        opacity: 0.2;
+        position: absolute;
+        border-radius: 50%;
+        top: -200%;
+    }
     .event.first{
-        top: 20%;
-        left: 43%;
+        top: 20vh;
+        left: 43vw;
     }
     .event__name{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 700;
-        line-height: 30px;
+        line-height: 25px;
         letter-spacing: 0.01em;
         color: white;
     }
     .event__timer{
         display: flex;
-        gap: 20px;
+        gap: 1.042vw;
     }
     .event__timer-item{
-        font-size: 40px;
+        font-size: 2.083vw;
         font-weight: 700;
-        line-height: 30px;
+        line-height: 1.5625vw;
         letter-spacing: 0.01em;
         color: white;
     }
     .event__timer-item span{
-        font-size: 20px;
+        font-size: 1.042vw;
     }
     .event.second{
-        top: 45%;
-        right: 15%;
+        top: 45vh;
+        right: 15vw;
     }
     .event.third{
-        bottom: 20%;
-        left: 43%;
+        bottom: 20vh;
+        left: 43vw;
     }
     .event.fourth{
-        top: 45%;
-        left: 15%;
+        top: 45vh;
+        left: 15vw;
     }
     .event__timer div{
         display: flex;
     }
     .event__timer span{
-        font-size: 20px;
+        font-size: 15px;
         line-height: 15px;
         font-weight: 700;
         letter-spacing: 0.01em;
         color: white;
         align-self: flex-end;
+    }
+    .ticker__item-big img{
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        padding-bottom: 5px;
     }
 }
 @media (min-width: 1000px) {
@@ -1613,11 +1646,24 @@ h1, h2{
         width: 100vw;
         height: 100vh;
         z-index: 100;
-        background: url("../img/main_frame.jpg") no-repeat center/cover;
     }
 
     body.with--ticker{
-        overflow: hidden;
+        overflow-x: hidden;
+        height: 439.792vw;
+        background: url("../img/t1.jpg") no-repeat top/cover;
+        animation: tback 2s linear infinite;
+    }
+    @keyframes tback {
+        0%{
+            background: url("../img/t1.jpg") no-repeat top/cover;
+        }
+        50% {
+            background: url("../img/t2.jpg") no-repeat top/cover;
+        }
+        to {
+            background: url("../img/t1.jpg") no-repeat top/cover;
+        }
     }
     .ticker__item{
         width: 250vw;
