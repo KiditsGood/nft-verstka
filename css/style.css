@@ -1646,6 +1646,9 @@ h1, h2{
         width: 100vw;
         height: 100vh;
         z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     body.with--ticker{
@@ -1667,21 +1670,19 @@ h1, h2{
     }
     .ticker__item{
         width: 250vw;
-        position: absolute;
         white-space: nowrap;
         overflow: hidden;
+        position: absolute;
         background: url("../img/ticker-top.png") no-repeat top left/833vw, url("../img/ticker-top.png") no-repeat bottom left/833vw, url("../img/blick.png") no-repeat center left/833vw;
         background-color: #FFD459;
     }
     .ticker__item:first-child{
+        left: -75vw;
         transform: rotate(25deg);
-        bottom: 0;
-        left: -25vw;
     }
     .ticker__item:nth-child(2){
+        left: -75vw;
         transform: rotate(-25deg);
-        left: -25vw;
-        top: 0;
     }
     .ticker__item-big{
         font-size: 2.03125vw;
@@ -1725,7 +1726,7 @@ h1, h2{
     }
     .event.first{
         top: 20vh;
-        left: 43vw;
+        left: 41.5vw;
     }
     .event__name{
         font-size: 2.083vw;
@@ -1754,7 +1755,7 @@ h1, h2{
     }
     .event.third{
         bottom: 20vh;
-        left: 43vw;
+        left: 41.5vw;
     }
     .event.fourth{
         top: 45vh;
@@ -1775,46 +1776,6 @@ h1, h2{
         width: 2.65625vw;
         vertical-align: middle;
         padding-bottom: 10px;
-    }
-}
-@media (min-width: 1401px) and (max-width: 1500px) {
-    .ticker__item:first-child{
-        transform: rotate(25deg);
-    }
-    .ticker__item:nth-child(2){
-        transform: rotate(-25deg);
-    }
-}
-@media (min-width: 1301px) and (max-width: 1400px) {
-    .ticker__item:first-child{
-        transform: rotate(28deg);
-    }
-    .ticker__item:nth-child(2){
-        transform: rotate(-28deg);
-    }
-}
-@media (min-width: 1201px) and (max-width: 1300px) {
-    .ticker__item:first-child{
-        transform: rotate(31deg);
-    }
-    .ticker__item:nth-child(2){
-        transform: rotate(-31deg);
-    }
-}
-@media (min-width: 1101px) and (max-width: 1200px) {
-    .ticker__item:first-child{
-        transform: rotate(34deg);
-    }
-    .ticker__item:nth-child(2){
-        transform: rotate(-34deg);
-    }
-}
-@media (min-width: 1000px) and (max-width: 1100px) {
-    .ticker__item:first-child{
-        transform: rotate(37deg);
-    }
-    .ticker__item:nth-child(2){
-        transform: rotate(-37deg);
     }
 }
 
