@@ -1638,6 +1638,28 @@ h1, h2{
         vertical-align: middle;
         padding-bottom: 5px;
     }
+    .soc__buttons{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        width: 100vw;
+        justify-content: center;
+    }
+    .soc__buttons-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 24px;
+        line-height: 35px;
+        color: white;
+    }
+    .soc__buttons-item:hover{
+        opacity: 0.5;
+    }
+    .soc__buttons-item--image{
+        width: 55px;
+        height: 55px;
+    }
 }
 @media (min-width: 1000px) {
     .ticker{
@@ -1776,6 +1798,30 @@ h1, h2{
         width: 2.65625vw;
         vertical-align: middle;
         padding-bottom: 10px;
+    }
+    .soc__buttons{
+        display: flex;
+        align-items: center;
+        gap: 2.604vw;
+        position: absolute;
+        bottom: 2vw;
+        width: 100vw;
+        justify-content: center;
+    }
+    .soc__buttons-item{
+        display: flex;
+        align-items: center;
+        gap: 0.521vw;
+        font-size: 1.25vw;
+        line-height: 1.823vw;
+        color: white;
+    }
+    .soc__buttons-item:hover{
+        opacity: 0.5;
+    }
+    .soc__buttons-item--image{
+        width: 2.865vw;
+        height: 2.865vw;
     }
 }
 
