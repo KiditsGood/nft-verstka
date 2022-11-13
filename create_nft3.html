@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/modal.css" />
+</head>
+<body>
+<header class="header">
+    <div class="header--wrap">
+        <div class="header--left--flex">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.svg" alt="" class="header__logo-icon">
+            </a>
+            <input type="text" class="header__search">
+            <nav class="header__nav">
+                <a href="" class="header__nav-item">Premint</a>
+                <a href="" class="header__nav-item">Collections</a>
+                <a href="" class="header__nav-item">Launchpad</a>
+                <a href="" class="header__nav-item">Help</a>
+            </nav>
+        </div>
+        <div class="header--right--flex">
+            <div class="header__user">
+                <a href="" class="header__user-item">
+                    <img src="img/user.png" alt="" class="header__user-item--image">
+                </a>
+                <a href="" class="header__user-item">
+                    <img src="img/Wallet.svg" alt="" class="header__user-item--image">
+                </a>
+                <a href="" class="header__user-item">
+                    <img src="img/Buy.svg" alt="" class="header__user-item--image">
+                </a>
+                <a href="" class="header__user-item">
+                    <img src="img/Chat.svg" alt="" class="header__user-item--image">
+                </a>
+            </div>
+            <div class="header__language">
+                <p class="header__language-text">RU</p>
+                <img src="img/arrow.svg" alt="" class="header__language-arrow">
+            </div>
+        </div>
+    </div>
+</header>
+<main class="wrapper noname">
+    <section class="create">
+        <h1 class="create__title">Создай новый NFT</h1>
+        <div class="create__wrap">
+            <div class="create__wrap-left">
+                <div class="select">
+                    <p class="select__name">Выберите кошелек</p>
+                    <div class="select__check">
+                        <div class="select__check-name">
+                            <img src="img/check.svg" alt="" class="select__check-name--icon">
+                            <p class="select__check-name--value">Ethereum 0024</p>
+                        </div>
+                        <img src="img/arrow.svg" alt="" class="select__check-arrow">
+                    </div>
+                </div>
+                <div class="select">
+                    <p class="select__name">Выберите сеть</p>
+                    <div class="select__check">
+                        <div class="select__check-name">
+                            <img src="img/check.svg" alt="" class="select__check-name--icon">
+                            <p class="select__check-name--value">Ethereum</p>
+                        </div>
+                        <img src="img/arrow.svg" alt="" class="select__check-arrow">
+                    </div>
+                </div>
+                <div class="create__load">
+                    <p class="create__load-name">Загрузите файл</p>
+                    <div class="create__load-field">
+                        <p class="create__load-desc">PNG, GIF, WEBP, MP4 или MP3. Максимум 100мб.</p>
+                        <input type="file" class="create__load-input" id="create-load">
+                        <label for="create-load" class="create__load-button button--gradient">Выбрать файл</label>
+                    </div>
+                </div>
+                <div class="create__drop">
+                    <p class="create__drop-name">Выложить на рынок</p>
+                    <p class="create__drop-desc">Введите цену, чтобы пользователи могли мгновенно приобрести ваш NFT</p>
+                    <div class="create__drop-field">
+                        <button class="create__drop-button active">Фиксированная цена</button>
+                        <button class="create__drop-button">Открыть для ставок</button>
+                        <button class="create__drop-button">Временный аукцион</button>
+                    </div>
+                </div>
+                <div class="create__time">
+                    <p class="create__price-name">Время аукционна</p>
+                    <div class="create__price-value">
+                        <p class="create__time-value">Выберите время проведения</p>
+                        <img src="img/arrow.svg" alt="" class="create__time-arrow">
+                    </div>
+                </div>
+                <div class="create__price">
+                    <p class="create__price-name">Цена</p>
+                    <div class="create__price-value">
+                        <input class="create__price-value--input" placeholder="Введите цену">
+                        <div class="create__price-value--wallet">
+                            <p class="price__wallet-name">Ethereum</p>
+                            <img src="img/arrow.svg" alt="" class="price__wallet-arrow">
+                        </div>
+                    </div>
+                    <div class="create__price-info">
+                        <p class="create__price-info--name">Комиссия</p>
+                        <p class="create__price-info--value">1%</p>
+                    </div>
+                    <div class="create__price-info">
+                        <p class="create__price-info--name">Вы получите</p>
+                        <p class="create__price-info--value">1%</p>
+                    </div>
+                </div>
+                <div class="create__collection">
+                    <p class="create__collection-name">Выбрать коллекцию</p>
+                    <div class="create__collection-field">
+                        <div class="create__collection-item">
+                            <p class="create__collection-item--text">Коллекция 32.01</p>
+                        </div>
+                        <div class="create__collection-new">
+                            <p class="create__collection-new--name">Создать новую</p>
+                            <button class="create__collection-new--button">
+                                <img src="img/add.svg" alt="" class="create__collection-new--add">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="create__job">
+                    <p class="create__job-name">Название</p>
+                    <input type="text" class="create__job-input" placeholder="Введите название вашей работы">
+                </div>
+                <div class="create__description">
+                    <div class="create__description-text">
+                        <p class="create__description-text--name">Описание</p>
+                        <p class="create__description-text--desc">(По желанию)</p>
+                    </div>
+                    <textarea class="create__description-field" placeholder="Введите описание вашей работы"></textarea>
+                </div>
+                <button class="create__go button--gradient">Создать NFT</button>
+            </div>
+            <div class="create__wrap-right">
+                <div class="create__see">
+                    <p class="create__see-name">Предварительный просмотр</p>
+                    <div class="create__see-field">
+                        <p class="create__see-field--text">Загрузите файл и выберите коллекцию, чтобы просмотреть свой новый NFT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="collection">
+            <div class="new--collection">
+                <div class="collection__load">
+                    <div class="collection__load-nft">
+                        <img src="img/nft_new.png" alt="" class="collection__load-nft--image">
+                    </div>
+                    <div class="collection__load-info">
+                        <p class="collection__load-info--title">Коллекция 33.25</p>
+                        <p class="collection__load-info--desc">Мы рекомендуем изображение
+                            размером не менее 300 x 300. Гифки тоже работают.
+                            Максимум 5мб.</p>
+                        <input id="new-file" type="file" class="collection__load-info--input">
+                        <label for="new-file" class="collection__load-info--button button--gradient">Выбрать файл</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer--wrap">
+        <div class="header--wrap">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.svg" alt="" class="header__logo-icon">
+            </a>
+            <input type="text" class="header__search">
+            <nav class="header__nav">
+                <a href="" class="header__nav-item">Premint</a>
+                <a href="" class="header__nav-item">Collections</a>
+                <a href="" class="header__nav-item">Launchpad</a>
+                <a href="" class="header__nav-item">Help</a>
+            </nav>
+            <button class="header__button button--gradient">Привязать кошелек</button>
+            <div class="header__language">
+                <p class="header__language-text">RU</p>
+                <img src="img/arrow.svg" alt="" class="header__language-arrow">
+            </div>
+            <div class="header__theme">
+                <div class="header__theme-item">
+                    <img src="img/day.svg" alt="" class="header__theme-item--icon">
+                </div>
+                <div class="header__theme-item active">
+                    <img src="img/night.svg" alt="" class="header__theme-item--icon">
+                </div>
+            </div>
+        </div>
+        <div class="footer__contacts">
+            <img src="img/f1.svg" alt="" class="footer__contacts-item">
+            <img src="img/f2.svg" alt="" class="footer__contacts-item">
+            <img src="img/f3.svg" alt="" class="footer__contacts-item">
+            <img src="img/f4.svg" alt="" class="footer__contacts-item">
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/sliders.js"></script>
+<script src="js/header.js"></script>
+<script src="js/createNFT.js"></script>
+</body>
+</html>

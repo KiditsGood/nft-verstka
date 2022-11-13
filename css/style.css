@@ -1825,6 +1825,512 @@ h1, h2{
     }
 }
 
+/* Create Nft */
+
+.choose{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    min-height: calc(100vh - 263px);
+}
+.choose__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.choose__title-name{
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 130px;
+    color: white;
+    text-align: center;
+}
+.choose__title-value{
+    font-size: 24px;
+    line-height: 35px;
+    color: rgba(141, 141, 141, 1);
+    text-align: center;
+    max-width: 659px;
+}
+.choose__field{
+    display: flex;
+    align-items: stretch;
+    gap: 43px;
+    flex-wrap: wrap;
+}
+.choose__field-blockchain{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    background: #1A1D20;
+    border: 1px solid #3A3F45;
+    box-shadow: 3px 4px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    padding: 34px 32px;
+}
+.choose__field-blockchain--image{
+    width: 33px;
+    height: 47px;
+    object-fit: contain;
+}
+.choose__field-blockchain--text{
+    font-size: 33px;
+    line-height: 47px;
+    color: white;
+}
+.choose__steps{
+    display: flex;
+    align-items: center;
+    gap: 115px;
+    margin-top: auto;
+}
+.choose__steps-item{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+    background: #3A3F45;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    position: relative;
+}
+.choose__steps-item.active{
+    background: #4F26C7;
+}
+.choose__steps-item:not(:last-child):after{
+    content: '';
+    position: absolute;
+    width: 95px;
+    height: 1px;
+    background: url("../img/steps_line.svg") no-repeat;
+    right: -105px;
+}
+.choose__field-type{
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    align-items: center;
+    background: #1A1D20;
+    border: 1px solid #3A3F45;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 455px;
+    padding: 21px 0 40px;
+}
+.choose__field-type:first-child{
+    background: url("../img/solo.png") no-repeat center top/100%;
+}
+.choose__field-type:last-child{
+    background: url("../img/party.png") no-repeat center top/100%;
+}
+.choose__field-type--title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    color: white;
+}
+.choose__field-type--desc{
+    font-size: 24px;
+    line-height: 35px;
+    color: rgba(141, 141, 141, 1);
+    max-width: 339px;
+    text-align: center;
+}
+.choose.type{
+    gap: 50px;
+}
+.create{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+    align-items: center;
+}
+.create__wrap{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    justify-content: space-between;
+}
+.create__wrap-left{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.select__name, .create__load-name, .create__drop-name, .create__price-name, .create__collection-name, .create__job-name, .create__description-text--name{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    color: white;
+}
+.select__check{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2B2F34;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 24px 20px;
+}
+.select__check-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.select__check-name--icon{
+    width: 20px;
+    height: 20px;
+}
+.select__check-name--value{
+    font-size: 18px;
+    line-height: 26px;
+    color: white;
+}
+.select__check-arrow{
+    width: 17px;
+}
+.create__load{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.create__load-field{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 1px dashed #2B2F34;
+    filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.1));
+    border-radius: 15px;
+    padding: 46px 0;
+}
+.create__load-desc, .create__drop-desc{
+    font-size: 24px;
+    line-height: 35px;
+    color: rgba(141, 141, 141, 1);
+    max-width: 443px;
+    text-align: center;
+}
+.create__load-input{
+    display: none;
+}
+.create__load-button{
+    padding: 15px 71px;
+}
+.create__drop{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.create__drop-desc{
+    text-align: left;
+}
+.create__drop-field{
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    background: #2B2F34;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.create__drop-button{
+    font-size: 24px;
+    text-align: center;
+    line-height: 28px;
+    color: white;
+    padding: 25px 28px;
+    border-radius: 16px;
+}
+.create__drop-button:hover{
+    color: rgba(25, 28, 31, 1);
+    background: white;
+}
+.create__drop-button.active{
+    color: rgba(25, 28, 31, 1);
+    background: white;
+}
+.create__price{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.create__price-value{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: #2B2F34;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 17px 20px;
+    margin-bottom: 15px;
+}
+.create__price-value--input{
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+}
+.create__price-value--input::placeholder{
+    color: rgba(141, 141, 141, 1);
+}
+.create__price-value--wallet{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.price__wallet-name{
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+}
+.price__wallet-arrow{
+    width: 17px;
+}
+.create__price-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: #1A1D20;
+    border: 1px solid #3A3F45;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 17px 20px;
+}
+.create__price-info--name{
+    font-size: 24px;
+    line-height: 35px;
+    color: rgba(141, 141, 141, 1);
+}
+.create__price-info--value{
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+}
+.create__collection{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.create__collection-field{
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.create__collection-item{
+    width: 205px;
+    height: 205px;
+    background: linear-gradient(156.44deg, #3E94EB 5.73%, #CD6077 45.86%, #EC5C15 84.82%);
+    border: 1px solid #3A3F45;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create__collection-item--text{
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+}
+.create__collection-new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    width: 205px;
+    height: 205px;
+    background: #1A1D20;
+    border: 1px solid #3A3F45;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.create__collection-new--name{
+    font-size: 24px;
+    line-height: 35px;
+    color: rgba(141, 141, 141, 1);
+}
+.create__collection-new--button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: white;
+}
+.create__collection-new--add{
+    width: 15px;
+    height: 15px;
+}
+.create__job{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.create__job-input{
+    background: #2B2F34;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 17px 20px;
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+}
+.create__job-input::placeholder{
+    color: rgba(141, 141, 141, 1);
+}
+.create__description{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.create__description-text{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.create__description-text--desc{
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(141, 141, 141, 1);
+}
+.create__description-field{
+    resize: none;
+    background: #2B2F34;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+    box-sizing: border-box;
+    padding: 17px 20px;
+    height: 147px;
+}
+.create__description-field::placeholder{
+    color: rgba(141, 141, 141, 1);
+}
+.create__go{
+    align-self: center;
+    padding: 15px 76px;
+}
+.create__see{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    position: sticky;
+    top: 70px;
+}
+.create__see-name{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    color: white;
+}
+.create__wrap-right{
+    width: 100%;
+    max-width: 658px;
+}
+.create__see-field{
+    background: #1A1D20;
+    border: 1px solid #3A3F45;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 100%;
+    height: 664px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create__see-field--text{
+    font-size: 24px;
+    line-height: 35px;
+    color: rgba(141, 141, 141, 1);
+    text-align: center;
+    max-width: 339px;
+}
+.create__time{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+.create__time-value{
+    font-size: 24px;
+    line-height: 35px;
+    color: rgba(141, 141, 141, 1);
+}
+#collection{
+    padding: 50px 60px;
+    display: none;
+}
+.new--collection{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.collection__load{
+    display: flex;
+    align-items: stretch;
+    gap: 60px;
+}
+.collection__load-nft{
+    max-width: 348px;
+    max-height: 348px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.collection__load-nft--image{
+    object-fit: contain;
+}
+.collection__load-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 363px;
+}
+.collection__load-info--title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    color: white;
+}
+.collection__load-info--desc{
+    font-size: 24px;
+    line-height: 35px;
+    color: rgba(141, 141, 141, 1);
+}
+.collection__load-info--input{
+    display: none;
+}
+.collection__load-info--button{
+    align-self: flex-start;
+    padding: 15px 71px;
+    margin-top: auto;
+}
+.collection__load-info--button:hover{
+    cursor: pointer;
+}
+
 /* Media Queries */
 
 @media (min-width: 1000px) and (max-width: 1400px) {
@@ -1977,5 +2483,72 @@ h1, h2{
     .event__timer-item{
         font-size: 30px;
         line-height: 30px;
+    }
+    .choose{
+        gap: 25px;
+        min-height: calc(100vh - 190px);
+    }
+    .choose__title{
+        gap: 20px;
+    }
+    .choose__title-name{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 39px;
+    }
+    .choose__title-value{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .choose__field{
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .choose__field-blockchain{
+        flex-direction: column;
+        gap: 7px;
+        padding: 11px 28px;
+    }
+    .choose__field-blockchain--image{
+        width: 37px;
+        height: 52px;
+    }
+    .choose__field-blockchain--text{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .choose__steps{
+        gap: 90px;
+    }
+    .choose__steps-item{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .choose__steps-item:not(:last-child):after{
+        width: 60px;
+        right: -75px;
+        background-size: 100%;
+    }
+    .choose__field-type{
+        width: 100%;
+        max-width: 360px;
+        padding: 15px 0 25px;
+        gap: 150px;
+    }
+    .choose__field-type--title{
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .choose__field-type--desc{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .choose__field.type{
+        justify-content: center;
+    }
+    .choose.type{
+        padding-bottom: 90px;
     }
 }
