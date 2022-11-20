@@ -839,7 +839,7 @@ function gameOver() {
         }, 1400)
 
         if (livesLost == 3) {
-            newLevel = false;
+            newLevel = true;
             setTimeout(() => {
                 start.innerHTML = "Game&nbsp; Over";
                 start.style.display = "block";
@@ -854,7 +854,7 @@ function gameOver() {
                     deleteGameBoard();
                     game.style.visibility = "hidden";
 
-                    setTimeout(startLevel, 500)
+                    // setTimeout(startLevel, 500)
                 }, 1500)
             }, 1500)
         } else {
