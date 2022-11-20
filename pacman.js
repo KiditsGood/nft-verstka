@@ -839,7 +839,7 @@ function gameOver() {
         }, 1400)
 
         if (livesLost == 3) {
-            newLevel = true;
+            newLevel = false;
             setTimeout(() => {
                 start.innerHTML = "Game&nbsp; Over";
                 start.style.display = "block";
